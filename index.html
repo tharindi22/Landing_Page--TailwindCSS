@@ -6,6 +6,8 @@
     <title>Interno Landing Page</title>
 
     <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="dist/output.css">
     
     <!-- Remix Icons -->
@@ -13,23 +15,49 @@
 
     <!-- Swiper CSS (Moved to Head) -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/input.css">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body class="font-[Jost]">
+<body class="bg-gray-100">
+    
+    <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
 
-    <div class="container mx-auto text-center">
-        <h1 class="h1 ">Interno Landing Page</h1>
-        <p >Interno is a sleek and modern landing page designed 
-            for interior design enthusiasts. With a minimalist aesthetic, 
-            smooth animations, and a user-friendly layout, it showcases stunning 
-            interiors effortlessly. Elevate your space with elegance—where design 
-            meets inspiration!
-        </p>
-    </div>
+        <!--grid img-->
+        <div class="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0
+        left-0 right-0 z-10"></div>
+
+        <!--bg photo(hero)-->
+        <section class="hero h-[640px] l:h-[800px] bg-hero bg-center lg:bg-cover bg-no-repeat
+            bg-fixed xl:rounded-bl-[290px] relative z-20">
+
+            <div class="container mx-1/2 max-h-19 h-full flex items-center justify-center
+            l:justify-start">
+            
+                <!--text-->
+                <div class="hero__text w-[567px] flex flex-col items-center text-center
+                xl:text-left lg:items-start">
+
+                    <h1 class="h1 mb-5">Let Your Home Be Unique</h1>
+                    <p class="mb-5">There many variations of the passages of lorem Ipsum from available,variations of the passages.</p>
+                    <button class="btn btn-primary mx-auto xl:mx-0">
+                        Get free estimation
+                        <i class="ri-arrow-right-line text-accent"></i>
+                    </button>
+                </div>
+
+            </div> 
+        </section>
+
+        <!--temparary div-->
+        <div class="h-[3000px]"></div>
+    </main>
+
+   
+    
 
     <!-- Scroll Reveal JS -->
     <script src="js/scrollreveal.min.js"></script> 
