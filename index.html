@@ -7,23 +7,52 @@
 
     <!-- Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="dist/output.css">
     
-    <!-- Remix Icons -->
+    <!--css-->
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="css/input.css">
+
+    <!--Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
 
     <!-- Swiper CSS (Moved to Head) -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/input.css">
-
+    
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
+
+    <!--header-->
+    <header class="sticky top-0 h-[70px] shadow-xl z-30 bg-white ">
+        <div class="container mx-auto  flex justify-between h-full items-center">
+          <!--logo-->  
+          <a href="#">
+            <img src="assets/logo.svg" alt="">
+          </a>
+          <!--nav-->
+          <nav>
+            <!--nav mobile trigger-->
+            <div cursor-pointer lg:hidden>
+                <i class="ri-menu-line text-4xl text-primary"></i>  
+            </div>
+            <ul class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0
+            right-0 flex flex-col gap-5 lg:relative lg:flex-row lg:p-0 lg:top-0
+            lg:border-none lg:h-full transition-all duration-300">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Our Work</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
     
+    <!--page wrapper-->
     <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
 
         <!--grid img-->
@@ -31,15 +60,15 @@
         left-0 right-0 z-10"></div>
 
         <!--bg photo(hero)-->
-        <section class="hero h-[640px] l:h-[800px] bg-hero bg-center lg:bg-cover bg-no-repeat
-            bg-fixed xl:rounded-bl-[290px] relative z-20">
+        <section class="hero h-[640px] xl:h-[840px] bg-hero bg-center lg:bg-cover bg-no-repeat
+            bg-fixed xl:rounded-bl-[200px] relative z-20">
 
-            <div class="container mx-1/2 max-h-19 h-full flex items-center justify-center
-            l:justify-start">
+            <div class="container mx-auto h-full flex items-center 
+             lg:mt-[-320px]">
             
                 <!--text-->
-                <div class="hero__text w-[567px] flex flex-col items-center text-center
-                xl:text-left lg:items-start">
+                <div class="hero__text w-[567px] flex flex-col items-start text-left ml-[120px] lg:mt-[290px]
+                lg:text-left ">
 
                     <h1 class="h1 mb-5">Let Your Home Be Unique</h1>
                     <p class="mb-5">There many variations of the passages of lorem Ipsum from available,variations of the passages.</p>
@@ -67,4 +96,4 @@
     <script src="js/main.js"></script>
 
 </body>
-</html>
+</html>            

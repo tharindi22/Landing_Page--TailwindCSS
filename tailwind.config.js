@@ -1,7 +1,7 @@
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./**/*.html", "./**/*.js"],
+export default {
+  content: ["*.{html,js}"],
   theme: {
     container:{
       padding: {
