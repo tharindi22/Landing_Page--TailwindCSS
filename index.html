@@ -35,12 +35,13 @@
           <!--nav-->
           <nav>
             <!--nav mobile trigger-->
-            <div cursor-pointer lg:hidden>
+            <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
                 <i class="ri-menu-line text-4xl text-primary"></i>  
             </div>
-            <ul class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0
+            <ul class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[70px] left-0
             right-0 flex flex-col gap-5 lg:relative lg:flex-row lg:p-0 lg:top-0
-            lg:border-none lg:h-full transition-all duration-300">
+            lg:border-none lg:h-full transition-all duration-300"
+            id="nav_menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Testimonials</a></li>
@@ -79,6 +80,18 @@
                 </div>
 
             </div> 
+        </section>
+
+        <!--steps-->
+        <section class="steps">
+            <div class="container mx-auto">
+              <!--grid items-->
+              <div class="grid">
+                <div>step 1</div>
+                <div>step 2</div>
+                <div>step 3</div>
+              </div>  
+            </div>
         </section>
 
         <!--temparary div-->

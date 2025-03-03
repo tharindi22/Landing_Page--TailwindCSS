@@ -612,8 +612,8 @@ video {
   top: 0px;
 }
 
-.top-\[90px\] {
-  top: 90px;
+.top-\[70px\] {
+  top: 70px;
 }
 
 .z-10 {
@@ -661,16 +661,12 @@ video {
   height: 640px;
 }
 
-.h-\[83px\] {
-  height: 83px;
+.h-\[70px\] {
+  height: 70px;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-\[70px\] {
-  height: 70px;
 }
 
 .w-\[567px\] {
@@ -865,6 +861,11 @@ h6 {
 .btn-accent:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(184 140 93 / var(--tw-bg-opacity, 1));
+}
+
+.nav-is-open {
+  height: 350px;
+  padding: 1.5rem;
 }
 
 @media (min-width: 960px) {
