@@ -19,15 +19,15 @@ h6 {
     @apply font-primary text-primary;
 }
 .h1 {
-    @apply text-[30px] lg:text-[70px] leading-none;
+    @apply text-[50px] lg:text-[70px] leading-none;
 }
 
 .h2 {
-    @apply text-[20px] leading-tight;
+    @apply text-[40px] leading-tight;
 }
 
 .h3 {
-    @apply text-[20px];
+    @apply text-[30px];
 }
 
 .btn {
