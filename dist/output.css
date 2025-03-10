@@ -662,7 +662,7 @@ video {
 }
 
 .mt-\[\] {
-  margin-top: ;
+  margin-top: 0;
 }
 
 .mt-\[100px\] {
@@ -714,7 +714,7 @@ video {
 }
 
 .w-\[\] {
-  width: ;
+  width: 0;
 }
 
 .w-\[93px\] {
@@ -734,7 +734,7 @@ video {
 }
 
 .max-w-\[\] {
-  max-width: ;
+  max-width: 0;
 }
 
 .max-w-\[450\] {
@@ -1068,7 +1068,7 @@ h6 {
   }
 
   .xl\:mt-\[\] {
-    margin-top: ;
+    margin-top: 0;
   }
 
   .xl\:mt-\[200\] {
@@ -1100,7 +1100,7 @@ h6 {
   }
 
   .xl\:max-w-\[\] {
-    max-width: ;
+    max-width: 0;
   }
 
   .xl\:max-w-\[410px\] {
@@ -1120,7 +1120,7 @@ h6 {
   }
 
   .xl\:gap-\[\] {
-    gap: ;
+    gap: 0;
   }
 
   .xl\:gap-\[74\] {
