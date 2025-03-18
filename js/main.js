@@ -10,6 +10,21 @@ navTriggerBtn.addEventListener('click', ()=>{
 const swiper = new Swiper('.swiper',{
     loop:true,
     pagination:{
-        el:'.swiper-pagination'
-    }
-})
+        el:'.swiper-pagination',
+        clickable: true,
+    },
+    //breakpoints
+    slidesPerView: 3,
+    spaceBetween: 20,
+    breakpoint: {
+        320: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        960: {
+            slidesPerView: 3,
+        },
+    },
+});
