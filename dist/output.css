@@ -645,6 +645,10 @@ video {
   margin-right: auto;
 }
 
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -721,6 +725,10 @@ video {
   width: 567px;
 }
 
+.w-\[70px\] {
+  width: 70px;
+}
+
 .w-\[93px\] {
   width: 93px;
 }
@@ -729,16 +737,24 @@ video {
   width: 100%;
 }
 
+.max-w-3xl {
+  max-width: 48rem;
+}
+
 .max-w-\[1920px\] {
   max-width: 1920px;
 }
 
-.max-w-\[370px\] {
-  max-width: 370px;
+.max-w-\[450px\] {
+  max-width: 450px;
 }
 
 .max-w-\[453px\] {
   max-width: 453px;
+}
+
+.max-w-\[548px\] {
+  max-width: 548px;
 }
 
 .max-w-md {
@@ -801,6 +817,15 @@ video {
   gap: 2rem;
 }
 
+.gap-x-\[104px\] {
+  -moz-column-gap: 104px;
+       column-gap: 104px;
+}
+
+.gap-y-\[56px\] {
+  row-gap: 56px;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -828,11 +853,6 @@ video {
 .bg-\[\#FFF5E1\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 245 225 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\#ac8942\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(172 137 66 / var(--tw-bg-opacity, 1));
 }
 
 .bg-accent-secondary {
@@ -904,6 +924,10 @@ video {
   padding-bottom: 110px;
 }
 
+.pl-1 {
+  padding-left: 0.25rem;
+}
+
 .pt-\[88px\] {
   padding-top: 88px;
 }
@@ -919,6 +943,11 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-4xl {
@@ -1071,6 +1100,19 @@ h6 {
   padding: 1.5rem;
 }
 
+/* swiper paging */
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullets,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 47 54 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-accent\/20:hover {
+  background-color: rgb(205 162 116 / 0.2);
+}
+
 @media (min-width: 960px) {
   .lg\:relative {
     position: relative;
@@ -1131,12 +1173,20 @@ h6 {
     margin-top: 100px;
   }
 
+  .xl\:mt-\[150px\] {
+    margin-top: 150px;
+  }
+
   .xl\:h-\[840px\] {
     height: 840px;
   }
 
   .xl\:max-w-\[310px\] {
     max-width: 310px;
+  }
+
+  .xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .xl\:grid-cols-3 {
