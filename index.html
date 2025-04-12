@@ -1,396 +1,525 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interno Landing Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interno Landing Page</title>
 
-    <!-- Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    
-    <!--css-->
-    <link rel="stylesheet" href="dist/output.css">
-    <link rel="stylesheet" href="css/input.css">
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-    <!--Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
+  <!--css-->
+  <link rel="stylesheet" href="dist/output.css">
+  <link rel="stylesheet" href="css/input.css">
 
-    <!-- Swiper CSS (Moved to Head) -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap" rel="stylesheet">
+  <!--Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
+
+  <!-- Swiper CSS (Moved to Head) -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body class="bg-gray-100">
 
-    <!--header-->
-    <header class="sticky top-0 h-[70px] shadow-xl z-30 bg-white ">
-        <div class="container mx-auto  flex justify-between h-full items-center">
-          <!--logo-->  
-          <a href="#">
-            <img src="assets/logo.svg" alt="">
-          </a>
-          <!--nav-->
-          <nav>
-            <!--nav mobile trigger-->
-            <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
-                <i class="ri-menu-line text-4xl text-primary"></i>  
-            </div>
-            <ul class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[70px] left-0
-            right-0 flex flex-col gap-5 lg:relative lg:flex-row lg:p-0 lg:top-0
-            lg:border-none lg:h-full transition-all duration-300"
-            id="nav_menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Our Work</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
+  <!--header-->
+  <header class="sticky top-0 h-[70px] shadow-xl z-30 bg-white ">
+    <div class="container mx-auto  flex justify-between h-full items-center">
+      <!--logo-->
+      <a href="#">
+        <img src="assets/logo.svg" alt="">
+      </a>
+      <!--nav-->
+      <nav>
+        <!--nav mobile trigger-->
+        <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+          <i class="ri-menu-line text-4xl text-primary"></i>
         </div>
-    </header>
-    
-    <!--page wrapper-->
-    <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
+        <ul class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[70px] left-0
+            right-0 flex flex-col gap-5 lg:relative lg:flex-row lg:p-0 lg:top-0
+            lg:border-none lg:h-full transition-all duration-300" id="nav_menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Our Work</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <!--background grid-->
-        <div class="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0
+  <!--page wrapper-->
+  <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
+
+    <!--background grid-->
+    <div class="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0
         left-10 right-0 z-10"></div>
 
-        <!--bg photo(hero)-->
-        <section class="hero h-[640px] xl:h-[840px] bg-hero bg-center lg:bg-cover bg-no-repeat
+    <!--bg photo(hero)-->
+    <section class="hero h-[640px] xl:h-[840px] bg-hero bg-center lg:bg-cover bg-no-repeat
             bg-fixed xl:rounded-bl-[200px] relative z-20">
 
-            <div class="container mx-auto h-full flex items-center 
+      <div class="container mx-auto h-full flex items-center 
              lg:mt-[-320px]">
-            
-                <!--text-->
-                <div class="hero__text w-[567px] flex flex-col items-start text-left ml-[120px] lg:mt-[290px]
+
+        <!--text-->
+        <div class="hero__text w-[567px] flex flex-col items-start text-left ml-[120px] lg:mt-[290px]
                 lg:text-left ">
 
-                    <h1 class="h1 mb-5">Let Your Home Be Unique</h1>
-                    <p class="mb-5">There many variations of the passages of lorem Ipsum from available,variations of the passages.</p>
-                    <button class="btn btn-primary mx-auto xl:mx-0">
-                        Get free estimation
-                        <i class="ri-arrow-right-line text-accent"></i>
-                    </button>
-                </div>
+          <h1 class="h1 mb-5">Let Your Home Be Unique</h1>
+          <p class="mb-5">There many variations of the passages of lorem Ipsum from available,variations of the
+            passages.</p>
+          <button class="btn btn-primary mx-auto xl:mx-0">
+            Get free estimation
+            <i class="ri-arrow-right-line text-accent"></i>
+          </button>
+        </div>
 
-            </div> 
-        </section>
+      </div>
+    </section>
 
-        <!--steps-->
-        <section class="steps mt-[70px] xl:mt-[100px] relative z-20">
-            <div class="container mx-auto">
-              <!--grid items-->
-              <div class="grid grid-cols-1 gap-12 xl:grid-cols-3">
-                <!--step 1-->
-                <div class="steps__step text-center">
-                    <div class="mb-4">
-                        <i class="ri-compasses-2-line text-5xl text-accent"></i>
-                    </div>
-                    <h3 class="h3 mb-5">Project Planing</h3>
-                    <p class="mb-5 max-w-md mx-auto">
-                        There are many variations of the passages of lorem Ipsum from available, majority.
-
-                    </p>
-                    <a href="#" class="font-medium flex justify-center gap-2">Read More
-                        <i class="ri-arrow-right-line text-accent"></i>
-                    </a>
-                </div>
-                
-                <!--step 2-->
-                <div class="steps__step text-center">
-                    <div class="mb-4">
-                        <i class="ri-magic-line text-5xl text-accent"></i>
-                    </div>
-                    <h3 class="h3 mb-5">Gaining Materials</h3>
-                    <p class="mb-5 max-w-md mx-auto">
-                        There are many variations of the passages of lorem Ipsum from available, majority.
-
-                    </p>
-                    <a href="#" class="font-medium flex justify-center gap-2">Read More
-                        <i class="ri-arrow-right-line text-accent"></i>
-                    </a>
-                </div>
-                
-                <!--step 3-->
-                <div class="steps__step text-center">
-                    <div class="mb-4">
-                        <i class="ri-tools-line text-5xl text-accent"></i>
-                    </div>
-                    <h3 class="h3 mb-5">Project Execution</h3>
-                    <p class="mb-5 max-w-md mx-auto">
-                        There are many variations of the passages of lorem Ipsum from available, majority.
-
-                    </p>
-                    <a href="#" class="font-medium flex justify-center gap-2">Read More
-                        <i class="ri-arrow-right-line text-accent"></i>
-                    </a>
-                </div>
-              </div>  
+    <!--steps-->
+    <section class="steps mt-[70px] xl:mt-[100px] relative z-20">
+      <div class="container mx-auto">
+        <!--grid items-->
+        <div class="grid grid-cols-1 gap-12 xl:grid-cols-3">
+          <!--step 1-->
+          <div class="steps__step text-center">
+            <div class="mb-4">
+              <i class="ri-compasses-2-line text-5xl text-accent"></i>
             </div>
-        </section>
+            <h3 class="h3 mb-5">Project Planing</h3>
+            <p class="mb-5 max-w-md mx-auto">
+              There are many variations of the passages of lorem Ipsum from available, majority.
 
-        <!--about-->
-        <section class="about mt-[80px] xl:mt-[100px] relative z-20">
-            <div class="container mx-auto xl:px-0">
-                <div class="flex flex-col xl:flex-row text-center xl:text-left 
-                justify-between items-center gap-8 xl:gap-[100px]"> 
-                    <!-- Text -->
-                    <div class="flex-1 order-2 xl:order-none max-w-xl xl:max-w-[310px]
+            </p>
+            <a href="#" class="font-medium flex justify-center gap-2">Read More
+              <i class="ri-arrow-right-line text-accent"></i>
+            </a>
+          </div>
+
+          <!--step 2-->
+          <div class="steps__step text-center">
+            <div class="mb-4">
+              <i class="ri-magic-line text-5xl text-accent"></i>
+            </div>
+            <h3 class="h3 mb-5">Gaining Materials</h3>
+            <p class="mb-5 max-w-md mx-auto">
+              There are many variations of the passages of lorem Ipsum from available, majority.
+
+            </p>
+            <a href="#" class="font-medium flex justify-center gap-2">Read More
+              <i class="ri-arrow-right-line text-accent"></i>
+            </a>
+          </div>
+
+          <!--step 3-->
+          <div class="steps__step text-center">
+            <div class="mb-4">
+              <i class="ri-tools-line text-5xl text-accent"></i>
+            </div>
+            <h3 class="h3 mb-5">Project Execution</h3>
+            <p class="mb-5 max-w-md mx-auto">
+              There are many variations of the passages of lorem Ipsum from available, majority.
+
+            </p>
+            <a href="#" class="font-medium flex justify-center gap-2">Read More
+              <i class="ri-arrow-right-line text-accent"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--about-->
+    <section class="about mt-[80px] xl:mt-[100px] relative z-20">
+      <div class="container mx-auto xl:px-0">
+        <div class="flex flex-col xl:flex-row text-center xl:text-left 
+                justify-between items-center gap-8 xl:gap-[100px]">
+          <!-- Text -->
+          <div class="flex-1 order-2 xl:order-none max-w-xl xl:max-w-[310px]
                     flex flex-col items-center  xl:items-start gap-8  p-12">
-                        <h2 class="h2">We Create The Art Of Stylish Living Stylishly
-                        </h2>
-                        <p >It is a long established fact that a reader will be distracted by the of readable content of a page 
-                            when lookings at its layouts the points of using 
-                            that it has a more-or-less normal.
-                        </p>
-                        <!--phone-->
-                        <div class="flex items-center justify-center xl:justify-start gap-4">
-                            <div class="bg-accent/15 w-[93px] rounded-full flex
+            <h2 class="h2">We Create The Art Of Stylish Living Stylishly
+            </h2>
+            <p>It is a long established fact that a reader will be distracted by the of readable content of a page
+              when lookings at its layouts the points of using
+              that it has a more-or-less normal.
+            </p>
+            <!--phone-->
+            <div class="flex items-center justify-center xl:justify-start gap-4">
+              <div class="bg-accent/15 w-[93px] rounded-full flex
                             justify-center items-center">
-                                <i class="ri-phone-fill text-accent text-4xl"></i>
-                            </div>
-                            <div class="text-left">
-                                <div class="text-2xl font-bold">
-                                   0987654321 
-                                </div>
-                                <div class="">
-                                    Call Us Anytime
-                                </div>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary">Get Free Estimation
-                            <i class="ri-arrow-right-line text-accent"></i>
-                        </button>
-                    </div>
-                    <!-- Image -->
-                    <div class="about__img order-1 xl:order-none max-w-[453px] mx-auto
+                <i class="ri-phone-fill text-accent text-4xl"></i>
+              </div>
+              <div class="text-left">
+                <div class="text-2xl font-bold">
+                  0987654321
+                </div>
+                <div class="">
+                  Call Us Anytime
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary">Get Free Estimation
+              <i class="ri-arrow-right-line text-accent"></i>
+            </button>
+          </div>
+          <!-- Image -->
+          <div class="about__img order-1 xl:order-none max-w-[453px] mx-auto
                        xl:mx-0"> <!--xl:max-w-none-->
-                        <img src="assets/about/img.png" alt="">
-                    </div>
-                </div> 
-            </div>
-        </section>
-        
-        <!-- Testimonial Section -->
-        <section class="testimonial mt-[80px] xl:mt-[100px] relative z-20">
-          <div class="container mx-auto bg-accent-secondary rounded-[70px] px-6 py-12">
-            <div class="flex flex-col items-center pt-[88px] pb-[110px] bg-[#FFF5E1] rounded-[30px]">
-              <h2 class="testimonial__title h2 mb-9 text-center">What Clients Say</h2>
-            
-              <!-- Swiper Slider -->
-              <div class="w-full ">
-                <div class="testimonial__slider swiper h-[400px]">
-                  <div class="swiper-wrapper ">
-                  
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide">
-                      <div class="testimonial__item w-full max-w-[450px] h-[320px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto">
-                        <div class="flex gap-4 mb-6">
-                          <img src="assets/testimonial/01.png" alt="Natasha Athapaththu" class="w-14 h-14 rounded-full object-cover">
-                          <div>
-                            <h3 class="h3">Natasha Athapaththu</h3>
-                            <div>Colombo, Sri Lanka</div>
-                          </div>
-                        </div>
-                        <!-- Feedback Box -->
-                        <div class=" p-4 rounded-lg shadow-sm">
-                          <p class="text-gray-700 text-sm">Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.</p>
-                        </div>
+            <img src="assets/about/img.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial mt-16 xl:mt-24 relative z-20">
+      <div class="container mx-auto bg-accent-secondary rounded-3xl px-6 py-12">
+        <div class="flex flex-col items-center py-16 bg-accent-secondary rounded-xl">
+          <h2 class="h2 mb-9 text-center">What Clients Say</h2>
+
+          <!-- Swiper Container -->
+          <div class="w-full max-w-4xl mx-auto">
+            <!-- Initialize Swiper -->
+            <div class="swiper testimonial-slider">
+              <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                  <div class="bg-white rounded-2xl p-6 shadow-md max-w-md mx-auto">
+                    <div class="flex items-center gap-4 mb-4">
+                      <img src="assets/testimonial/01.png" alt="Natasha Athapaththu"
+                        class="w-14 h-14 rounded-full object-cover">
+                      <div>
+                        <h3 class="font-bold text-lg">Natasha Athapaththu</h3>
+                        <p class="text-gray-600 text-sm">Colombo, Sri Lanka</p>
                       </div>
                     </div>
-                  
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide">
-                      <div class="testimonial__item w-full max-w-[450px] h-[320px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto">
-                        <div class="flex gap-4 mb-6">
-                          <img src="assets/testimonial/02.png" alt="Natasha Athapaththu" class="w-14 h-14 rounded-full object-cover">
-                          <div>
-                            <h3 class="h3">Tiya Amaranath</h3>
-                            <div>Kurunegala, Sri Lanka</div>
-                          </div>
-                        </div>
-                        <!-- Feedback Box -->
-                        <div class=" p-4 rounded-lg shadow-sm">
-                          <p class="text-gray-700 text-sm">Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.</p>
-                        </div>
-                      </div>
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                      <p class="text-gray-700">Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has
+                        been.</p>
                     </div>
-                  
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide">
-                      <div class="testimonial__item w-full max-w-[450px] h-[320px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto">
-                        <div class="flex gap-4 mb-6">
-                          <img src="assets/testimonial/03.png" alt="Natasha Athapaththu" class="w-14 h-14 rounded-full object-cover">
-                          <div>
-                            <h3 class="h3">Kasun Ekanayaka</h3>
-                            <div>Kandy, Sri Lanka</div>
-                          </div>
-                        </div>
-                        <!-- Feedback Box -->
-                        <div class=" p-4 rounded-lg shadow-sm">
-                          <p class="text-gray-700 text-sm">Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.</p>
-                        </div>
-                      </div>
-                    </div>
-                  
-                    <!-- Slide 4 -->
-                    <div class="swiper-slide">
-                      <div class="testimonial__item w-full max-w-[450px] h-[320px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto">
-                        <div class="flex gap-4 mb-6">
-                          <img src="assets/testimonial/04.png" alt="Natasha Athapaththu" class="w-14 h-14 rounded-full object-cover">
-                          <div>
-                            <h3 class="h3">Maleesha Athapaththu</h3>
-                            <div>Colombo, Sri Lanka</div>
-                          </div>
-                        </div>
-                        <!-- Feedback Box -->
-                        <div class=" p-4 rounded-lg shadow-sm">
-                          <p class="text-gray-700 text-sm">Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.</p>
-                        </div>
-                      </div>
-                    </div>
-                  
-                  </div> <!-- Closing `.swiper-wrapper` correctly -->
-                
-                  <!-- Swiper Pagination -->
-                  <div class="swiper-pagination"></div>
+                  </div>
                 </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                  <div class="bg-white rounded-2xl p-6 shadow-md max-w-md mx-auto">
+                    <div class="flex items-center gap-4 mb-4">
+                      <img src="assets/testimonial/02.png" alt="Tiya Amaranath"
+                        class="w-14 h-14 rounded-full object-cover">
+                      <div>
+                        <h3 class="font-bold text-lg">Tiya Amaranath</h3>
+                        <p class="text-gray-600 text-sm">Kurunegala, Sri Lanka</p>
+                      </div>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                      <p class="text-gray-700">Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has
+                        been.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                  <div class="bg-white rounded-2xl p-6 shadow-md max-w-md mx-auto">
+                    <div class="flex items-center gap-4 mb-4">
+                      <img src="assets/testimonial/03.png" alt="Kasun Ekanayaka"
+                        class="w-14 h-14 rounded-full object-cover">
+                      <div>
+                        <h3 class="font-bold text-lg">Kasun Ekanayaka</h3>
+                        <p class="text-gray-600 text-sm">Kandy, Sri Lanka</p>
+                      </div>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                      <p class="text-gray-700">Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has
+                        been.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                  <div class="bg-white rounded-2xl p-6 shadow-md max-w-md mx-auto">
+                    <div class="flex items-center gap-4 mb-4">
+                      <img src="assets/testimonial/04.png" alt="Maleesha Athapaththu"
+                        class="w-14 h-14 rounded-full object-cover">
+                      <div>
+                        <h3 class="font-bold text-lg">Maleesha Athapaththu</h3>
+                        <p class="text-gray-600 text-sm">Colombo, Sri Lanka</p>
+                      </div>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                      <p class="text-gray-700">Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has
+                        been.</p>
+                    </div>
+                  </div>
+                </div>
+
               </div>
+
+              <!-- Add pagination -->
+              <div class="swiper-pagination mt-8"></div>
             </div>
           </div>
-        </section>
+        </div>
+      </div>
+    </section>
 
-        <!--brands-->
-        <section class="brands mt-[80px] xl:mt-[150px] relative z-20">
-          <div class="container mx-auto">
-            <div class="flex flex-col xl:flex-row justify-between items-center gap-12">
-              <img class="brands__img" src="assets/brands/01.svg" alt=""/>
-              <img class="brands__img" src="assets/brands/02.svg" alt="" />
-              <img class="brands__img" src="assets/brands/03.svg" alt=""/>
-              <img class="brands__img" src="assets/brands/04.svg" alt=""/>
-              <img class="brands__img" src="assets/brands/05.svg" alt=""/>
+    <!-- Swiper JS initialization script (place before closing body tag) -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const swiper = new Swiper('.testimonial-slider', {
+          // Optional parameters
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+
+          // Responsive breakpoints
+          breakpoints: {
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 1
+            },
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 2
+            },
+            // when window width is >= 1024px
+            1024: {
+              slidesPerView: 2
+            }
+          },
+
+          // Pagination
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          }
+        });
+      });
+    </script>
+
+    <!--brands-->
+    <section class="brands mt-[80px] xl:mt-[150px] relative z-20">
+      <div class="container mx-auto">
+        <div class="flex flex-col xl:flex-row justify-between items-center gap-12">
+          <img class="brands__img" src="assets/brands/01.svg" alt="" />
+          <img class="brands__img" src="assets/brands/02.svg" alt="" />
+          <img class="brands__img" src="assets/brands/03.svg" alt="" />
+          <img class="brands__img" src="assets/brands/04.svg" alt="" />
+          <img class="brands__img" src="assets/brands/05.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- work-->
+    <section class="work brands mt-[80px] xl:mt-[150px] relative z-20">
+      <div class="container mx-auto xl:px-0">
+        <!--text-->
+        <div class="text-center mb-24">
+          <h2 class="work__title h2 mb-4">Follow Out Projects</h2>
+          <p class="work__subtitle max-w-3xl mx-auto">It is a long established fact that a reader will be distracted by
+            the of readable
+            content of page lookings at its layouts points.</p>
+        </div>
+        <!--grid-->
+        <div class="work__grid grid grid-cols-1 xl:grid-cols-2 gap-x-[104px] gap-y-[56px]">
+          <!--item 1-->
+          <div class="w-full max-w-[450px] h-full mx-auto">
+            <img class="mb-6" src="assets/work/01.png" alt="">
+            <div class="flex justify-between items-center w-full">
+              <div class="">
+                <h3 class="h3">Modern Kitchen</h3>
+                <p>Decor / Architecture</p>
+              </div>
+              <button class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full">
+                <i class="ri-arrow-right-s-line text-3xl text-primary pl-1"></i>
+              </button>
             </div>
           </div>
-        </section>
-
-        <!-- work-->
-        <section class="work brands mt-[80px] xl:mt-[150px] relative z-20">
-          <div class="container mx-auto xl:px-0">
-            <!--text-->
-            <div class="text-center mb-24">
-              <h2 class="work__title h2 mb-4">Follow Out Projects</h2>
-              <p class="work__subtitle max-w-3xl mx-auto">It is a long established fact that a reader will be distracted by the of readable 
-                content of page lookings at its layouts points.</p>
-            </div>
-            <!--grid-->
-            <div class="work__grid grid grid-cols-1 xl:grid-cols-2 gap-x-[104px] gap-y-[56px]">
-              <!--item-->
-              <div class="w-full max-w-[548px] h-full mx-auto">
-                <img class="mb-6" src="assets/work/01.png" alt=""> 
-                <div class="flex justify-between items-center w-full">
-                  <div class="">
-                    <h3 class="h3">Modern Kitchen</h3>
-                    <p>Decor / Architecture</p>
-                  </div>
-                  <button class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full">
-                    <i class="ri-arrow-right-s-line text-3xl text-primary pl-1"></i>
-                  </button>
-                </div>
+          <!--item 2-->
+          <div class="w-full max-w-[450px] h-full mx-auto">
+            <img class="mb-6" src="assets/work/02.png" alt="">
+            <div class="flex justify-between items-center w-full">
+              <div class="">
+                <h3 class="h3">Modern Kitchen</h3>
+                <p>Decor / Architecture</p>
               </div>
-              <!--item-->
-              <div class="w-full max-w-[548px] h-full mx-auto">
-                <img class="mb-6" src="assets/work/02.png" alt=""> 
-                <div class="flex justify-between items-center w-full">
-                  <div class="">
-                    <h3 class="h3">Modern Kitchen</h3>
-                    <p>Decor / Architecture</p>
-                  </div>
-                  <button class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full">
-                    <i class="ri-arrow-right-s-line text-3xl text-primary pl-1"></i>
-                  </button>
-                </div>
-              </div>
-              <!--item-->
-              <div class="w-full max-w-[548px] h-full mx-auto">
-                <img class="mb-6" src="assets/work/03.png" alt=""> 
-                <div class="flex justify-between items-center w-full">
-                  <div class="">
-                    <h3 class="h3">Modern Kitchen</h3>
-                    <p>Decor / Architecture</p>
-                  </div>
-                  <button class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full">
-                    <i class="ri-arrow-right-s-line text-3xl text-primary pl-1"></i>
-                  </button>
-                </div>
-              </div>
-              <!--item-->
-              <div class="w-full max-w-[548px] h-full mx-auto">
-                <img class="mb-6" src="assets/work/04.png" alt=""> 
-                <div class="flex justify-between items-center w-full">
-                  <div class="">
-                    <h3 class="h3">Modern Kitchen</h3>
-                    <p>Decor / Architecture</p>
-                  </div>
-                  <button class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full">
-                    <i class="ri-arrow-right-s-line text-3xl text-primary pl-1"></i>
-                  </button>
-                </div>
-              </div>
+              <button class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full">
+                <i class="ri-arrow-right-s-line text-3xl text-primary pl-1"></i>
+              </button>
             </div>
           </div>
-        </section>
+          <!--item 3-->
+          <div class="w-full max-w-[450px] h-full mx-auto">
+            <img class="mb-6" src="assets/work/03.png" alt="">
+            <div class="flex justify-between items-center w-full">
+              <div class="">
+                <h3 class="h3">Modern Kitchen</h3>
+                <p>Decor / Architecture</p>
+              </div>
+              <button class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full">
+                <i class="ri-arrow-right-s-line text-3xl text-primary pl-1"></i>
+              </button>
+            </div>
+          </div>
+          <!--item 4-->
+          <div class="w-full max-w-[450px] h-full mx-auto">
+            <img class="mb-6" src="assets/work/04.png" alt="">
+            <div class="flex justify-between items-center w-full">
+              <div class="">
+                <h3 class="h3">Modern Kitchen</h3>
+                <p>Decor / Architecture</p>
+              </div>
+              <button class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full">
+                <i class="ri-arrow-right-s-line text-3xl text-primary pl-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!--stats-->
-        <section class="stats mt-[80px] xl:mt-[150px] relative z-20 bg-accent-secondary
+    <!--stats-->
+    <section class="stats mt-[80px] xl:mt-[150px] relative z-20 bg-accent-secondary
         py-[80px] xl:py-[150px]"> <!--colour not working-->
-          <div class="container mx-auto">
-            <!--grid-->
-            <div class="grid grid-cols-1 xl:grid-cols-4 gap-12">
-              <!--grid item-->
-              <div class="stats__item text-center xl:border-r xl:border-accent">
-                <h3 class="h1 font-primary text-accent">12</h3>
-                <p>Years of Experience</p>
-              </div>
-               <!--grid item-->
-               <div class="stats__item text-center xl:border-r xl:border-accent">
-                <h3 class="h1 font-primary text-accent">85</h3>
-                <p>Project Completed</p>
-              </div>
-               <!--grid item-->
-               <div class="stats__item text-center xl:border-r xl:border-accent">
-                <h3 class="h1 font-primary text-accent">15</h3>
-                <p>Active Projects</p>
-              </div>
-               <!--grid item-->
-               <div class="stats__item text-center ">
-                <h3 class="h1 font-primary text-accent">95</h3>
-                <p>Happy Customers</p>
+      <div class="container mx-auto">
+        <!--grid-->
+        <div class="grid grid-cols-1 xl:grid-cols-4 gap-12">
+          <!--grid item-->
+          <div class="stats__item text-center xl:border-r xl:border-accent">
+            <h3 class="h1 font-primary text-accent">12</h3>
+            <p>Years of Experience</p>
+          </div>
+          <!--grid item-->
+          <div class="stats__item text-center xl:border-r xl:border-accent">
+            <h3 class="h1 font-primary text-accent">85</h3>
+            <p>Project Completed</p>
+          </div>
+          <!--grid item-->
+          <div class="stats__item text-center xl:border-r xl:border-accent">
+            <h3 class="h1 font-primary text-accent">15</h3>
+            <p>Active Projects</p>
+          </div>
+          <!--grid item-->
+          <div class="stats__item text-center ">
+            <h3 class="h1 font-primary text-accent">95</h3>
+            <p>Happy Customers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--news-->
+    <section class="news mt-[80px] xl:mt-[150px] relative z-20">
+      <div class="container mx-auto px-0">
+        <!--text-->
+        <div class="max-w-[800px] mx-auto text-center mb-[24px]">
+          <h2 class="news__title h2">Artical & News</h2>
+          <p class="news__subtitle">
+            It is a long established fact that a reader will be distracted by the of readable content of <br>
+            a page when lookings at its layouts the points of using.
+          </p>
+        </div>
+        <!--grid-->
+        <div class="news__grid grid grid-cols-1 xl:grid-cols-3 gap-[27px]">
+          <!--grid item-->
+          <div class="news__item w-full max-w-[382px] h-[520px] border border-primary/20 rounded-[62px]
+              p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0">
+            <img class="mb-5" src="assets/news/01.png" alt="">
+            <div class="flex flex-col gap-[30px]">
+              <h3 class="h3">
+                Let's Get Solution FOr Building Construction Work
+              </h3>
+              <div class="flex items-center justify-between">
+                <p class="text-base">22 June,2024</p>
+                <button class="bg-accent-secondary w-[52px] h-[52px] rounded-full
+                    group-hover:bg-white transition-all">
+                  <i class="ri-arrow-right-s-line text-3xl text-primary pl-1">
+
+                  </i>
+
+                </button>
               </div>
             </div>
+
+
           </div>
-        </section>
 
-        
-        
-        <!--temparary div-->
-        <div class="h-[3000px]"></div>
-    </main>
+          <!--grid item-->
+          <div class="news__item w-full max-w-[382px] h-[520px] border border-primary/20 rounded-[62px]
+              p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0">
+            <img class="mb-5" src="assets/news/02.png" alt="">
+            <div class="flex flex-col gap-[30px]">
+              <h3 class="h3">
+                Let's Get Solution FOr Building Construction Work
+              </h3>
+              <div class="flex items-center justify-between">
+                <p class="text-base">22 June,2024</p>
+                <button class="bg-accent-secondary w-[52px] h-[52px] rounded-full
+                    group-hover:bg-white transition-all">
+                  <i class="ri-arrow-right-s-line text-3xl text-primary pl-1">
 
-   
-    
+                  </i>
 
-    <!-- Scroll Reveal JS -->
-    <script src="js/scrollreveal.min.js"></script> 
-    <!-- Swiper JS -->
-    <script src="js/swiper-bundle.min.js"></script>
-    <!-- Main JS -->
-    <script src="js/main.js"></script>
+                </button>
+              </div>
+            </div>
+
+
+          </div>
+          
+          <!--grid item-->
+          <div class="news__item w-full max-w-[382px] h-[520px] border border-primary/20 rounded-[62px]
+              p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0">
+            <img class="mb-5" src="assets/news/03.png" alt="">
+            <div class="flex flex-col gap-[30px]">
+              <h3 class="h3">
+                Let's Get Solution FOr Building Construction Work
+              </h3>
+              <div class="flex items-center justify-between">
+                <p class="text-base">22 June,2024</p>
+                <button class="bg-accent-secondary w-[52px] h-[52px] rounded-full
+                    group-hover:bg-white transition-all">
+                  <i class="ri-arrow-right-s-line text-3xl text-primary pl-1">
+
+                  </i>
+
+                </button>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--temparary div-->
+    <div class="h-[3000px]"></div>
+  </main>
+
+
+
+
+  <!-- Scroll Reveal JS -->
+  <script src="js/scrollreveal.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
 
 </body>
-</html>            
+
+</html>
