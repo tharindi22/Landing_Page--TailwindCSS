@@ -665,6 +665,10 @@ video {
   margin-bottom: 2.25rem;
 }
 
+.mb-\[24px\] {
+  margin-bottom: 24px;
+}
+
 .ml-\[120px\] {
   margin-left: 120px;
 }
@@ -771,6 +775,10 @@ video {
 
 .max-w-\[453px\] {
   max-width: 453px;
+}
+
+.max-w-\[800px\] {
+  max-width: 800px;
 }
 
 .max-w-md {
