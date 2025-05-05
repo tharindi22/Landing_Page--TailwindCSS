@@ -143,7 +143,7 @@
         <div class="flex flex-col xl:flex-row text-center xl:text-left 
                 justify-between items-center gap-8 xl:gap-[100px]">
           <!-- Text -->
-          <div class="flex-1 order-2 xl:order-none max-w-xl xl:max-w-[310px]
+          <div class="about__text flex-1 order-2 xl:order-none max-w-xl xl:max-w-[310px]
                     flex flex-col items-center  xl:items-start gap-8  p-12">
             <h2 class="h2">We Create The Art Of Stylish Living Stylishly
             </h2>
@@ -179,16 +179,15 @@
       </div>
     </section>
 
-    <!-- Testimonial Section -->
-    <section class="testimonial mt-16 xl:mt-24 relative z-20">
-      <div class="container mx-auto bg-accent-secondary rounded-3xl px-6 py-12">
-        <div class="flex flex-col items-center py-16 bg-accent-secondary rounded-xl">
-          <h2 class="h2 mb-9 text-center">What Clients Say</h2>
+    <!-- feedback Section -->
+    <section class="feedback mt-[80px] xl:mt-[200px] relative z-20">
+      <div class="feedback__bg container mx-auto bg-accent-secondary rounded-[70px] px-6">
+        <div class=" flex flex-col items-center pt-[88px] pb-[110px]">
+          <h2 class="feedback_title h2 mb-9 text-center">What Clients Say</h2>
 
-          <!-- Swiper Container -->
-          <div class="w-full max-w-4xl mx-auto">
-            <!-- Initialize Swiper -->
-            <div class="swiper testimonial-slider">
+          <!-- Slider -->
+          <div class="w-full ">
+            <div class="feedback__slider swiper h-[400px]">
               <div class="swiper-wrapper">
 
                 <!-- Slide 1 -->
@@ -273,39 +272,7 @@
       </div>
     </section>
 
-    <!-- Swiper JS initialization script (place before closing body tag) -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const swiper = new Swiper('.testimonial-slider', {
-          // Optional parameters
-          slidesPerView: 1,
-          spaceBetween: 30,
-          loop: true,
-
-          // Responsive breakpoints
-          breakpoints: {
-            // when window width is >= 640px
-            640: {
-              slidesPerView: 1
-            },
-            // when window width is >= 768px
-            768: {
-              slidesPerView: 2
-            },
-            // when window width is >= 1024px
-            1024: {
-              slidesPerView: 2
-            }
-          },
-
-          // Pagination
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-          }
-        });
-      });
-    </script>
+    
 
     <!--brands-->
     <section class="brands mt-[80px] xl:mt-[150px] relative z-20">
@@ -425,7 +392,8 @@
         <div class="max-w-[800px] mx-auto text-center mb-[24px]">
           <h2 class="news__title h2">Artical & News</h2>
           <p class="news__subtitle">
-            It is a long established fact that a reader will be distracted by the of readable content of <br>
+            It is a long established fact that a reader will be distracted by the 
+            of readable content of 
             a page when lookings at its layouts the points of using.
           </p>
         </div>
@@ -522,16 +490,69 @@
     <!--footer-->
     <footer class="footer mt-[80px] xl:mt-[150px] relative z-20">
       <div class="container mx-auto px-0">
-        <div class="flex flex-col xl:flex-row xl:gap-[100px]">
-          <div class="bg-yellow-300">first</div>
-          <div class="bg-blue-300">second</div>
+        <div class="flex flex-col xl:flex-row xl:gap-[100px] xl:mb-[150px]">
+          <div class="footer__item w-full max-w-[400px] mx-auto mb-8 text-center
+          xl:text-left">
+          <!--logo-->
+            <a class="flex justify-center xl:justify-start mb-8" href="#">
+              <img src="assets/logo.svg" alt="">
+            </a>
+            <p class="mt-8 text-xl">It is a long established fact that a reader will be distracted 
+              lookings.</p>
+            <!--socials-->
+            <ul class="text-primary flex gap-[54px] justify-center xl:justify-start">
+              <li>
+                <a href=""><i class="ri-facebook-fill"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="ri-twitter-fill"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="ri-linkedin-fill"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="ri-instagram-fill"></i></a>
+              </li>
+            </ul>
+        </div>
+        <div class="flex-1 flex flex-col xl:flex-row text-center xl:text-left gap-12
+          xl:gap-[100px] xl:justify-end">
+          <div class="footer__item">
+            <h3 class="h3 mb-3">Pages</h3>
+            <ul class="flex flex-col gap-4">
+              <li><a href="">About Us</a></li>
+              <li><a href="">Testimonials</a></li>
+              <li><a href="">Our Work</a></li>
+              <li><a href="">News</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h3 class="h3 mb-3">Services</h3>
+            <ul class="flex flex-col gap-4">
+              <li><a href="">Kitchen</a></li>
+              <li><a href="">Living area</a></li>
+              <li><a href="">Bathroom</a></li>
+              <li><a href="">Bedroom</a></li>
+            </ul>
+          </div>
+          <div class="footer__item max-w-[260px] mx-auto xl:mx-0">
+            <h3 class="h3 mb-3">Contact</h3>
+            <div class="flex flex-col gap-6 text-[20px]">
+              <p>55 Colombo ROad, Kurunegala</p>
+              <p>contact@Interno.com</p>
+              <p>+94 72 123 5612</p>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
+
     </footer>
     
 
     <!--temparary div-->
-    <div class="h-[3000px]"></div>
+    <div class="h-[2500px]"></div>
   </main>
 
 
